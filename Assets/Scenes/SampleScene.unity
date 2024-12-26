@@ -667,7 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileMaterial: {fileID: 2100000, guid: 7067b17f5e2e1874695a394362d951fe, type: 2}
   tileSize: 1
-  yOffset: 0.1
+  yOffset: 0.01
   boundX: -0.5
   boundZ: -0.5
   deathSize: 0.5
