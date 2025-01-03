@@ -78,7 +78,7 @@ public class Client : MonoBehaviour
         {
             if (cmd == NetworkEvent.Type.Connect)
             {
-                //SentToServer(new NetWelcome());
+                SendToServer(new NetWelcome());
                 Debug.Log("We're connected!");
             }
             else if (cmd == NetworkEvent.Type.Data)
@@ -94,7 +94,7 @@ public class Client : MonoBehaviour
             }
         }
     }
-    private void SendToServer(NetMessage msg)
+    public void SendToServer(NetMessage msg)
     {
         DataStreamWriter writer;
         driver.BeginSend(connection, out writer);
